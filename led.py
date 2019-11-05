@@ -7,7 +7,7 @@ GPIO.setup(18,GPIO.OUT)
 counter = 0
 laiks = 1
 try:
-    while counter < 30:
+    while counter < 60:
         print("Led 1 on")
         GPIO.output(18,GPIO.HIGH)
         time.sleep(laiks)
