@@ -16,7 +16,7 @@ try:
         time.sleep(laiks)
         print("Kaut kas jauns")
         counter = counter + 1
-        laiks = laiks - 0.1
+        laiks = laiks - 0.09
 except KeyboardInterrupt:
         print("/n"), counter
 finally:
