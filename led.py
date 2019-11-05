@@ -9,10 +9,10 @@ try:
     while counter < 30:
         print("Led 1 on")
         GPIO.output(18,GPIO.HIGH)
-        time.sleep(1)
+        time.sleep(0.2)
         print("Led off")
         GPIO.output(18,GPIO.LOW)
-        time.sleep(1)
+        time.sleep(0.2)
         print("Kaut kas jauns")
         counter = counter + 1
 except KeyboardInterrupt:
