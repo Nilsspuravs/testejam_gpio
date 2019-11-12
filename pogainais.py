@@ -15,6 +15,7 @@ try:
         button_state = GPIO.input(4)
     if button_state == GPIO.HIGH:
         print ("poga1_HIGH")
+        time.sleep(0.2)
         GPIO.output(17,GPIO.HIGH)
         time.sleep(laiks)
         GPIO.output(17,GPIO.LOW)
@@ -25,6 +26,7 @@ try:
         
     else :
         print("poga1_LOW")
+        time.sleep(0.2)
         GPIO.output(17,GPIO.LOW)
 except KeyboardInterrupt:
         print
