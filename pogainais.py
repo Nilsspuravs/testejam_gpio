@@ -8,7 +8,7 @@ GPIO.setup(22,GPIO.OUT)
 
 GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-counter = 100
+counter = 0
 laiks = 1.4
 try:
     while counter < 100:
