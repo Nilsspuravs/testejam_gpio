@@ -18,11 +18,17 @@ try:
         print ("poga1_HIGH")
         GPIO.output(17,GPIO.HIGH)
         time.sleep(laiks)
+        GPIO.output(17,GPIO.LOW)
+        time.sleep(laiks)
         counter = counter + 1
         laiks = laiks - 0.01
 
         
-    else:
+    else :
         print("poga1_LOW")
         GPIO.output(17,GPIO.LOW)
+
+    
+finally:
+            GPIO.cleanup()
         
