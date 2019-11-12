@@ -10,7 +10,8 @@ GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
 while True:
     button_state = GPIO.input(button)
     if button_state == GPIO.HIGH:
-        print ("HIGH")
+        print ("poga1_HIGH")
+        time.sleep(1)
     else:
-        print("LOW")
+        print("poga1_LOW")
         time.sleep(1)
