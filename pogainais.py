@@ -6,14 +6,13 @@ GPIO.setup(17,GPIO.OUT)
 GPIO.setup(27,GPIO.OUT)
 GPIO.setup(22,GPIO.OUT)
 
-button1 = 4
-GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
+GPIO.setup(4, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 counter = 100
 laiks = 1.4
 try:
     while counter < 100:
-    button_state = GPIO.input(button)
+        button_state = GPIO.input(4)
     if button_state == GPIO.HIGH:
         print ("poga1_HIGH")
         GPIO.output(17,GPIO.HIGH)
