@@ -14,28 +14,21 @@ try:
         button_state1 = GPIO.input(4)
         button_state2 = GPIO.input(18)
         button_state3 = GPIO.input(23)
-        print("Done1")
-        GPIO.output(17,GPIO.LOW)
-        GPIO.output(27,GPIO.LOW)
-        GPIO.output(22,GPIO.LOW)
-
-    if button_state1 == GPIO.LOW:
-        GPIO.output(17,GPIO.HIGH)
-        GPIO.output(27,GPIO.HIGH)
-        GPIO.output(22,GPIO.HIGH)
-        time.sleep(0.5)
-    
-        
-
-        
-    else :
-        GPIO.output(17,GPIO.LOW)
-        GPIO.output(27,GPIO.LOW)
-        GPIO.output(22,GPIO.LOW)
-        time.sleep(0.5)
+        if button_state1 == GPIO.LOW:
+            print("11111")
+            GPIO.output(17,GPIO.HIGH)
+            GPIO.output(27,GPIO.HIGH)
+            GPIO.output(22,GPIO.HIGH)
+            time.sleep(0.5)
+        else :
+            print("2222")
+            GPIO.output(17,GPIO.LOW)
+            GPIO.output(27,GPIO.LOW)
+            GPIO.output(22,GPIO.LOW)
+            time.sleep(0.5)
 
 except KeyboardInterrupt:
-        print("/n"), counter
+        print("/n")
 finally:
             GPIO.cleanup()
     
