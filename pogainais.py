@@ -27,7 +27,8 @@ try:
     else :
         print("poga1_LOW")
         GPIO.output(17,GPIO.LOW)
-
+except KeyboardInterrupt:
+        print
     
 finally:
             GPIO.cleanup()
