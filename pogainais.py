@@ -29,8 +29,7 @@ try:
         time.sleep(0.2)
         GPIO.output(17,GPIO.LOW)
 except KeyboardInterrupt:
-        print
+        print("ble")
     
-finally:
-            GPIO.cleanup()
+
         
