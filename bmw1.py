@@ -13,4 +13,4 @@ print(data.temperature)
 print(data.pressure)
 print(data.humidity)
 
-print(data)
+print((data), file=open("output.txt", "a+"))
